@@ -46,7 +46,7 @@ def backup_github_repositories(token, backup_dir):
             print(f"\n- Cloning repository '{repo_name}'...")
             subprocess.run(["git", "clone", clone_url, repo_path], check=True)
 
-    print("Backup completed.")
+    print("\n- Backup completed.")
 
 if __name__ == "__main__":
     GITHUB_TOKEN = input("- GITHUB_TOKEN : ")
